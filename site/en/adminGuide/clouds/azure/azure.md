@@ -109,7 +109,7 @@ az storage container create -n testmilvus --account-name milvustesting1
 
 - get secret key, use the first value
 ```bash
-az storage account keys list --account-name milvustesting2
+az storage account keys list --account-name milvustesting1
 ```
 
 - Add values.yaml
@@ -136,7 +136,7 @@ externalS3:
   bucketName: testmilvus # the storage account container name
   cloudProvider: azure
   useSSL: true
-  accessKey: "milvustesting1" # the storage account name
+  accessKey: milvustesting1 # the storage account name
   secretKey: "<secret-key>" 
 ```
 
